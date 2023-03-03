@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="site.css">
-    <title>Hoteles</title>
-</head>
-<body>
-    <div class="hotel-container">
-        <div class="hotel-header">
-            <h2>Reseña de hotel</h2>
-        </div>
-        <div class="hotel-body">
-            <div class="hotel-description">
-                <div class="hotel-name-container">
-                    <span id="hotel-name" class="hotel-name">Hotel Barceló</span>
-                </div>
-                <div class="hotel-location-container">
-                    <span id="hotel-location" class="hotel-location">Playa La Barrosa, Chiclana</span>
-                </div>
-                <div class="hotel-image-container"></div>
-                    <img src="https://static.barcelo.com/content/dam/bhg/master/es/hoteles/spain/andalucia/cadiz/novo-sancti-petri/carrusel/RHSANC_POOL_29.jpg.bhgimg.optm1100.jpg/1604686168341.jpg" alt="Hotel Barceló">
-                </div>
-            <div class="hotel-opinion-container">
-                <div class="hotel-rating-container"></div>
-                    <span class="hotel-rating">Puntuación</span>
-                    <div class="stars">
-                        <span>&#9734;</span>
-                        <span>&#9734;</span>
-                        <span>&#9734;</span>
-                        <span>&#9734;</span>
-                        <span>&#9734;</span>
-                    </div>
-                <div class="hotel-review-container"></div>
-                    <span class="hotel-review">Reseña anónima</span>
-                    <input type="checkbox">
 
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="site.css" />
+  <title>Reseña hotel</title>
+</head>
+
+<body>
+  <h1>Reseña hotel</h1>
+  <div class="row">
+    <div class="col-50">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-50">
+            <h3 id="name-hotel">Hotel Desconocido</h3>
+            <h4 id="location-hotel">Desconocida</h4>
+          </div>
+
+          <div class="col-50">
+            <img class="image" id="img-hotel" src="" alt="Foto hotel">
+          </div>
+
         </div>
-            
+      </div>
+    </div>
+
+    <div class="col-50">
+      <div class="container">
+        <p class="stars">Puntuación: <span id="rating"></span></p>
+        <hr>
+        <p>Reseña anónima <input type="checkbox" id="anonymous"></p>
+      </div>
     </div>
 
     <script src="demo.js"></script>
-
 </body>
+
 </html>
+
+
+
